@@ -1,0 +1,84 @@
+#board {
+    width: 600px;
+    height: 600px;
+    margin: auto;
+    display: grid;
+    grid: repeat(15, auto) / auto-flow;
+    margin-bottom: 3em;
+}
+
+.rack {
+    height: 42px;
+    width: 294px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(7, auto);
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+#hint-wrapper {
+    text-align: center;
+}
+
+.grid-item {
+    height: 40px;
+    width: 40px;
+    border: 1px solid black;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-weight: bold;
+
+    /* The following will align the letters to the center of each square */
+    /* See this useful guide: https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid-item:hover {
+    background-color: beige;
+}
+
+.LSx2 {
+    background-color: cyan;
+}
+
+.LSx3 {
+    background-color: blue;
+    color: white;
+}
+
+.WSx2 {
+    background-color: pink;
+}
+
+.WSx3 {
+    background-color: red;
+    color: white;
+}
+
+#controls {
+    text-align: center;
+}
+
+input[type=number] {
+    width: 50px;
+}
+
+.center {
+    text-align: center;
+}
+
+.m-auto {
+    margin: auto;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+}
