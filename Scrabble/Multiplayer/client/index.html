@@ -1,1 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Scrabble</title>
 
+        <script type="module" src="main.js" defer></script>
+        <link rel="stylesheet" href="main.css" />
+    </head>
+    <body>
+        <div id="board"></div>
+        <div id="controls">
+            <label for="word">Word: </label><input type="text" id="word" />
+            <label for="x">x: </label><input type="number" id="x" min="1" max="15" />
+            <label for="y">y: </label><input type="number" id="y" min="1" max="15" />
+            <select id="direction">
+                <option value="horizontal">Horizontal</option>
+                <option value="vertical">Vertical</option>
+            </select>
+            <input type="button" value="Play!" id="play" />
+            <input type="button" value="Reset" id="reset" />
+            <input type="button" value="Help!" id="help" />
+        </div>
+        <p class="center">It is <b id="turn"></b>'s turn!</p>
+        <p class="center"><input type="text" value="Player 1" id="p1-name" />'s rack:</p>
+        <div id="p1-rack" class="rack"></div>
+        <p class="center"><input type="text" value="Player 2" id="p2-name" />'s rack:</p>
+        <div id="p2-rack" class="rack"></div>
+        <div id="hint-wrapper">Hint: <span id="hint"></span></div>
+    </body>
+</html>
